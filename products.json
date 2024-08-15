@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "price": 29.99,
+        "image": "https://example.com/images/wireless-mouse.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Mechanical Keyboard",
+        "price": 79.99,
+        "image": "https://example.com/images/mechanical-keyboard.jpg"
+    },
+    {
+        "id": 3,
+        "name": "HD Monitor",
+        "price": 199.99,
+        "image": "https://example.com/images/hd-monitor.jpg"
+    },
+    {
+        "id": 4,
+        "name": "USB-C Hub",
+        "price": 39.99,
+        "image": "https://example.com/images/usb-c-hub.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Laptop Stand",
+        "price": 49.99,
+        "image": "https://example.com/images/laptop-stand.jpg"
+    }
+]
