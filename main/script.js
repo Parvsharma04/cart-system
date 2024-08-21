@@ -49,7 +49,7 @@ products.forEach((element) => {
   div.className = "item";
   div.className += ` ${element.id}`;
   buttonDiv.className = "button-div";
-  image.src = `https://dummyjson.com/image/350/008080/ffffff?text=${element.name}`;
+  image.src = `https://dummyjson.com/image/200/008080/ffffff?text=${element.name}`;
   h1.textContent = element.name;
   p.innerHTML = element.price;
   button1.innerText = "Show Description";

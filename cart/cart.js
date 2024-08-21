@@ -81,7 +81,7 @@ function renderData() {
       decrease.addEventListener("click", removeItem);
       div.className = "item";
       div.className += ` ${element.id}`;
-      image.src = `https://dummyjson.com/image/350/008080/ffffff?text=${element.name}`;
+      image.src = `https://dummyjson.com/image/200/008080/ffffff?text=${element.name}`;
       h1.textContent = element.name;
       price.innerHTML = "$ " + element.price;
       qty.innerText = "QTY : ";
