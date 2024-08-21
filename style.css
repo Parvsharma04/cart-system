@@ -8,6 +8,7 @@ body {
     gap: 2rem;
     margin-top: 0.5rem;
     justify-content: space-evenly;
+    color: white;
 }
 
 .item{
@@ -76,4 +77,12 @@ nav{
 
 h1{
     font-size: xx-large;
+}
+
+#bill{
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    height: auto;
+    color: white;
 }

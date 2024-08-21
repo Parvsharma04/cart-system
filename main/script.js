@@ -89,7 +89,9 @@ function addToCart(e) {
 
   console.log(selectedProduct, alreadyInCart)
   let newCart = getCart();
-
+  if(newCart == null){
+    newCart = [];
+  }
   products.forEach((ele) => {
     if (ele.id == selectedProduct && !alreadyInCart) {
       ele.qty = 1;
