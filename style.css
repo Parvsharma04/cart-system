@@ -81,8 +81,17 @@ h1{
 
 #bill{
     display: flex;
-    width: 100%;
+    width: 90%;
     border: 1px solid white;
     height: auto;
     color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    margin-left: 5rem;
+    justify-content: space-around;
+}
+
+#bill h1{
+    display: block;
 }
