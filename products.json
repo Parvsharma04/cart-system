@@ -1,4 +1,4 @@
-[
+const products = [
     {
         "id": 1,
         "name": "Wireless Mouse",
@@ -28,5 +28,35 @@
         "name": "Laptop Stand",
         "price": 49.99,
         "image": "https://example.com/images/laptop-stand.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Gaming Headset",
+        "price": 89.99,
+        "image": "https://example.com/images/gaming-headset.jpg"
+    },
+    {
+        "id": 7,
+        "name": "External SSD",
+        "price": 129.99,
+        "image": "https://example.com/images/external-ssd.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Webcam",
+        "price": 59.99,
+        "image": "https://example.com/images/webcam.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Desk Organizer",
+        "price": 19.99,
+        "image": "https://example.com/images/desk-organizer.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Mouse Pad",
+        "price": 14.99,
+        "image": "https://example.com/images/mouse-pad.jpg"
     }
 ]

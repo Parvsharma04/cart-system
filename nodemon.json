@@ -1,0 +1,6 @@
+
+{
+  "watch": ["main", "cart"], // or the directory where your source files are located
+  "ext": "js,jsx,ts,tsx,html,css", // file extensions to watch
+  "exec": "npm start" // or your command to start the server
+}

@@ -1,42 +1,39 @@
 const root = document.querySelector("#container");
 const bill = document.querySelector('#bill');
-function getData() {
-  let cart = JSON.parse(localStorage.getItem("cart"));
+
+ function getData() {
+  let cart =  JSON.parse(localStorage.getItem('cart')) || null;
   console.log("Getting cart", cart);
   return cart;
 }
 
 function saveData(cart) {
-  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function addItem(e) {
   let itemName = e.target.parentNode.parentNode.children[1].innerText;
   let cart = getData();
-
   if (cart) {
-    cart.forEach((item) => {
-      if (item.name === itemName) {
-        item.qty++;
-      }
-    });
-    saveData(cart);
-    renderData();
+    let item = cart.find(item => item.name === itemName);
+    if (item) {
+      item.qty++;
+      saveData(cart);
+      renderData();
+    }
   }
 }
 
 function removeItem(e) {
   let itemName = e.target.parentNode.parentNode.children[1].innerText;
   let cart = getData();
-
   if (cart) {
-    cart.forEach((item) => {
-      if (item.name === itemName && item.qty > 1) {
-        item.qty--;
-      }
-    });
-    saveData(cart);
-    renderData();
+    let item = cart.find(item => item.name === itemName);
+    if (item && item.qty > 1) {
+      item.qty--;
+      saveData(cart);
+      renderData();
+    }
   }
 }
 
